@@ -1134,6 +1134,7 @@ inline void tmc_standby_setup() {
  *  - Set Marlin to RUNNING State
  */
 void setup() {
+  delay(3000);  //add startup delay to get the stupid chiron display to not be a bitch about marlin starting before it does
   #ifdef FASTIO_INIT
     FASTIO_INIT();
   #endif
